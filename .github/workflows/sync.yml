@@ -1,6 +1,6 @@
 on:
   issues:
-    types: [labeled]
+    types: [opened, labeled, reopened]
 
 jobs:
   sync:
@@ -12,9 +12,12 @@ jobs:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
         with:
           label: "sync"
+
           ado_organization: "org"
           ado_project: "project"
-          ado_tags: "githubSync"
+
           ado_work_item_type: "Task"
           ado_area_path: "Area\\Subarea"
+          ado_tags: "githubSync"
+
           ado_dont_check_if_exist: false
