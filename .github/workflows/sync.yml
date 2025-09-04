@@ -1,0 +1,20 @@
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: MicrosoftEdge/action-issue-to-workitem@main
+        env:
+          ado_token: "${{ secrets.ADO_PAT }}"
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          label: "sync"
+          ado_organization: "org"
+          ado_project: "project"
+          ado_tags: "githubSync"
+          ado_work_item_type: "Task"
+          ado_area_path: "Area\\Subarea"
+          ado_dont_check_if_exist: false
