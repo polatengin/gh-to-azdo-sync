@@ -11,7 +11,7 @@ jobs:
           ado_token: "${{ secrets.ADO_PAT }}"
           github_token: "${{ secrets.GITHUB_TOKEN }}"
         with:
-          label: "sync"
+          # label: "sync"
 
           ado_organization: "enpolat"
           ado_project: "Test4CAIRA"
