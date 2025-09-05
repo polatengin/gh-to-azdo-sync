@@ -13,8 +13,8 @@ jobs:
         with:
           label: "sync"
 
-          ado_organization: "org"
-          ado_project: "project"
+          ado_organization: "enpolat"
+          ado_project: "Test4CAIRA"
 
           ado_work_item_type: "Task"
           ado_area_path: "Area\\Subarea"
