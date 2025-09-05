@@ -17,7 +17,7 @@ jobs:
           ado_project: "Test4CAIRA"
 
           ado_work_item_type: "Task"
-          ado_area_path: "Area\\Subarea"
+          ado_area_path: "Test4CAIRA"
           ado_tags: "githubSync"
 
           ado_dont_check_if_exist: false
